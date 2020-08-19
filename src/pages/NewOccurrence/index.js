@@ -5,7 +5,7 @@ import NotificationsNone from '@material-ui/icons/NotificationsNone';
 import ExitToApp from '@material-ui/icons/ExitToApp';
 import RegisterInput from '../../components/Register/RegisterInput';
 import RegisterSelect from '../../components/Register/RegisterSelect';
-import ComorbiditiesInput from '../../components/Comorbidities/ComorbiditiesInput';
+import RadioInput from '../../components/RadioInput/RadioInput';
 
 export default function NewOccurrence() {
   return (
@@ -131,36 +131,43 @@ export default function NewOccurrence() {
           <fieldset>
             <legend>Comorbidades relevantes</legend>
 
-            <ComorbiditiesInput 
+            <RadioInput 
               title="É Hipertenso (a)?"
+              name="question1"
             />
 
-            <ComorbiditiesInput 
+            <RadioInput 
               title="É Diabético (a)?"
+              name="question2"
             />
 
-            <ComorbiditiesInput 
+            <RadioInput 
               title="Usa anticoagulante?"
+              name="question3"
             >
               <p>Varfarina (Marevan), Apixaban (Eliquis), Rivaroxaban (Xarelto), Dabigatran (Pradaxa), Edoxaban (Lixiana)</p>
-            </ComorbiditiesInput>
+            </RadioInput>
 
-            <ComorbiditiesInput 
+            <RadioInput 
               title="Tem arritmia (ex: fibrilação atrial)?"
+              name="question4"
             />
 
-            <ComorbiditiesInput 
+            <RadioInput 
               title="Histórico de AVC prévio?"
+              name="question5"
             />
 
-            <ComorbiditiesInput 
+            <RadioInput 
               title="Faz uso de drogas recreativas? Qual?"
+              name="question6"
             >
               <p>Cocaína, anfetaminas e maconha.</p>
-            </ComorbiditiesInput>
+            </RadioInput>
 
-            <ComorbiditiesInput 
+            <RadioInput 
               title="Histórico de epilepsia?"
+              name="question7"
             />
 
           </fieldset>

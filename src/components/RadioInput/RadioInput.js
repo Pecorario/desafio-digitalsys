@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 
-export default function ComorbiditiesInput({ title, children }) {
+export default function RadioInput({ title, children, name }) {
   return (
     <div className="container-comorbidities">
       <div className="comorbidities-title">
@@ -13,17 +13,17 @@ export default function ComorbiditiesInput({ title, children }) {
       <div className="comorbidities-inputs">
 
         <div className="container-comorbidities-inputs">
-          <input type="radio" name="sim" />
+          <input type="radio" name={name} value="sim" />
           <label for="sim">Sim</label>
         </div>
 
         <div className="container-comorbidities-inputs">
-          <input type="radio" name="nao" />
+          <input type="radio" name={name} value="nao" />
           <label for="nao">Não</label>
         </div>
 
         <div className="container-comorbidities-inputs">
-          <input type="radio" name="nao-sei" />
+          <input type="radio" name={name} value="nao-sei" />
           <label for="nao-sei">Não sei</label>
         </div>
     
