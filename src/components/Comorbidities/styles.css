@@ -1,10 +1,45 @@
-.container-comorbities {
+.container-comorbidities {
   display: flex;
+  height: 4rem;
+  align-items: center;
+  border-bottom: 1.1px solid #e2e8f0;
+  justify-content: space-between;
+}
+
+.comorbidities-title h2 {
   font-size: 14px;
   font-weight: bold;
   line-height: 1.29;
   color: #718096;
-  height: 3rem;
+  margin-left: 1rem;
+}
+
+.comorbidities-title p {
+  font-size: 10px;
+  font-weight: bold;
+  font-style: italic;
+  color: #718096;
+  margin-left: 1rem;
+}
+
+.container-comorbidities label {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.33;
+  color: #2b6cb0;
+  margin-left: 0.6rem;
+}
+
+.comorbidities-inputs {
+  display: flex;
+  height: 100%;
+}
+
+.container-comorbidities-inputs {
+  height: 100%;
+  width: 10.5rem;
+  display: flex;
   align-items: center;
-  border-bottom: 1.1px solid #e2e8f0;
+  border-left: 1.1px solid #e2e8f0;
+  padding-left: 1rem;
 }

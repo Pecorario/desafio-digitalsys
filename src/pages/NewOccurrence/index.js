@@ -138,6 +138,31 @@ export default function NewOccurrence() {
             <ComorbiditiesInput 
               title="É Diabético (a)?"
             />
+
+            <ComorbiditiesInput 
+              title="Usa anticoagulante?"
+            >
+              <p>Varfarina (Marevan), Apixaban (Eliquis), Rivaroxaban (Xarelto), Dabigatran (Pradaxa), Edoxaban (Lixiana)</p>
+            </ComorbiditiesInput>
+
+            <ComorbiditiesInput 
+              title="Tem arritmia (ex: fibrilação atrial)?"
+            />
+
+            <ComorbiditiesInput 
+              title="Histórico de AVC prévio?"
+            />
+
+            <ComorbiditiesInput 
+              title="Faz uso de drogas recreativas? Qual?"
+            >
+              <p>Cocaína, anfetaminas e maconha.</p>
+            </ComorbiditiesInput>
+
+            <ComorbiditiesInput 
+              title="Histórico de epilepsia?"
+            />
+
           </fieldset>
         </form>
       </main>
