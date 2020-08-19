@@ -3,6 +3,9 @@ import logoImg from '../../assets/images/GPSUS.svg';
 import './styles.css';
 import NotificationsNone from '@material-ui/icons/NotificationsNone';
 import ExitToApp from '@material-ui/icons/ExitToApp';
+import RegisterInput from '../../components/Register/RegisterInput';
+import RegisterSelect from '../../components/Register/RegisterSelect';
+import ComorbiditiesInput from '../../components/Comorbidities/ComorbiditiesInput';
 
 export default function NewOccurrence() {
   return (
@@ -51,50 +54,92 @@ export default function NewOccurrence() {
           <fieldset>
             <legend>Cadastro do paciente</legend>
 
-            <label for="name">Nome completo</label>
-            <input type="text" id="name" name="name" placeholder="DIGITE O NOME DO PACIENTE" />
+            <div className="register-line">
+              <RegisterInput title="Nome completo"
+              inputFor="name"
+              placeholderText="DIGITE O NOME DO PACIENTE"
+            />
+            </div>          
 
-            <label for="cpf">CPF</label>
-            <input type="text" id="cpf" name="cpf" placeholder="DIGITE O CPF DO PACIENTE" />
+            <div className="register-line">
+              <RegisterInput title="CPF"
+                inputFor="cpf"
+                placeholderText="DIGITE O CPF DO PACIENTE"
+              />
 
-            <label for="age">Idade</label>
-            <input type="text" id="date" name="date" placeholder="DIGITE A IDADE" />
+              <RegisterInput title="Idade"
+                inputFor="age"
+                placeholderText="DIGITE A IDADE"
+              />
 
-            <label for="weight">Peso</label>
-            <input type="text" id="weight" name="weight" placeholder="DIGITE O PESO" />
+              <RegisterInput title="Peso"
+                inputFor="weight"
+                placeholderText="DIGITE O PESO"
+              />
 
-            <label for="gender">Gênero</label>
-            <select id="gender" name="gender" >
-              <option value="Feminino">Feminino</option>
-              <option value="Masculino">Masculino</option>
-              <option value="Outro">Outro</option>
-            </select>
+              <RegisterSelect title="Gênero"
+                inputFor="gender"
+                placeholderText="SELECIONE O GÊNERO"
+              />
+            </div>
 
-            <label for="emercency-contact-name">Nome do contato de emergência</label>
-            <input type="text" id="emercency-contact-name" name="emercency-contact-name" placeholder="DIGITE O NOME DO CONTATO" />
+            <div className="register-line">
+              <RegisterInput title="Nome do contato de emergência"
+                inputFor="emergency-contact-name"
+                placeholderText="DIGITE O NOME DO CONTATO"
+              />
 
-            <label for="emercency-contact-telephone">Telefone do contato de emergência</label>
-            <input type="number" id="emercency-contact-telephone" name="emercency-contact-telephone" placeholder="DIGITE O TELEFONE" />
+              <RegisterInput title="Telefone do contato de emergência"
+                inputFor="emergency-contact-telephone"
+                placeholderText="DIGITE O TELEFONE"
+              />
+            </div>
 
-            <label for="cep">CEP da ocorrência</label>
-            <input type="number" id="cep" name="cep" placeholder="DIGITE O CEP" />
+            <div className="register-line">
+              <RegisterInput title="CEP da ocorrência"
+                inputFor="cep"
+                placeholderText="DIGITE O CEP"
+              />
 
-            <label for="adress">Endereço da ocorrência</label>
-            <input type="text" id="adress" name="adress" placeholder="NOME DA RUA" />
+              <RegisterInput title="Endereço da ocorrência"
+                inputFor="adress"
+                placeholderText="NOME DA RUA"
+              />
 
-            <label for="adress-number">Número</label>
-            <input type="text" id="adress-number" name="adress-number" placeholder="NÚMERO DA RESIDÊNCIA" />
+              <RegisterInput title="Número"
+                inputFor="adress-number"
+                placeholderText="NÚMERO DA RUA"
+              />
+            </div>
 
-            <label for="state">Estado</label>
-            <select id="state" name="state">
-            </select>
+            <div className="register-line">
+              <RegisterSelect title="Estado"
+                inputFor="state"
+                placeholderText="SELECIONE O ESTADO"
+              />
 
-            <label for="city">Cidade</label>
-            <select id="city" name="city">
-            </select>
+              <RegisterSelect title="Cidade"
+                inputFor="city"
+                placeholderText="SELECIONE A CIDADE"
+              />
+            </div>
+
           </fieldset>
         </form>
         
+        <form className="comorbidity">
+          <fieldset>
+            <legend>Comorbidades relevantes</legend>
+
+            <ComorbiditiesInput 
+              title="É Hipertenso (a)?"
+            />
+
+            <ComorbiditiesInput 
+              title="É Diabético (a)?"
+            />
+          </fieldset>
+        </form>
       </main>
 
     </div>

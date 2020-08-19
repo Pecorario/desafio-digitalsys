@@ -1,0 +1,31 @@
+.container-input {
+  background: #eff4f6;
+  padding: 0.5rem 0 0.5rem 1rem;
+  width: 100%;
+}
+
+.container-input label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  margin-bottom: 0.5rem;
+}
+
+.container-input input {
+  color: #4a5568;
+}
+
+.container-input label, .container-input input {
+  width: 100%;
+}
+
+.container-input input::placeholder {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.33;
+  color: #a0aec0;
+}
+
+.container-input select:required:invalid {
+  color: #a0aec0;
+}

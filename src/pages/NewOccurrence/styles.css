@@ -109,8 +109,12 @@
   color: #2b6cb0
 }
 
-#page-new-occurrence main form {
+#page-new-occurrence .patient-register {
   margin-top: 1rem;
+}
+
+#page-new-occurrence form {
+  margin-top: 2rem;
   width: 100%;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.06);
 }
@@ -127,11 +131,55 @@
   align-items: center;
 }
 
-#page-new-occurrence label {
-  display: block;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.29;
-  
+.register-line {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 1rem 0 1rem;
 }
 
+#cpf {
+  width: 35%;
+  margin-right: 1rem;
+}
+
+#age, #weight {
+  width: 20%;
+  margin-right: 1rem;
+}
+
+#gender {
+  margin-left: 0;
+  width: 25%;
+}
+
+#emergency-contact-name {
+  width: 70%;
+  margin-right: 1rem;
+}
+
+#emergency-contact-telephone {
+  width: 30%;
+}
+
+#cep {
+  width: 30%;
+  margin-right: 1rem;
+}
+
+#adress {
+  width: 55%;
+  margin-right: 1rem;
+}
+
+#adress-number {
+  width: 15%;
+}
+
+#state, #city {
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+#state {
+  margin-right: 1rem;
+}
