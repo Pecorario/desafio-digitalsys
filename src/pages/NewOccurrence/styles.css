@@ -179,3 +179,33 @@ form legend {
 #state {
   margin-right: 1rem;
 }
+
+/* avc box */
+
+.label-p {
+  font-size: 10px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.4;
+  color: #a4a4a4;
+  margin-left: 0.6rem;
+  margin-right: 0.2rem;
+}
+
+.input-time {
+  background: #eff4f6;
+  flex-direction: column;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  
+}
+
+.input-time label{
+  color: black !important;
+  margin: 0 !important;
+}
+
+.input-time input {
+  margin-top: 0.5rem;
+  width: 100%;
+}

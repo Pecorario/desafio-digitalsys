@@ -1,4 +1,4 @@
-.container-comorbidities {
+.container-radio {
   display: flex;
   height: 4rem;
   align-items: center;
@@ -6,7 +6,7 @@
   justify-content: space-between;
 }
 
-.comorbidities-title h2 {
+.radio-title h2 {
   font-size: 14px;
   font-weight: bold;
   line-height: 1.29;
@@ -14,7 +14,7 @@
   margin-left: 1rem;
 }
 
-.comorbidities-title p {
+.radio-title p {
   font-size: 10px;
   font-weight: bold;
   font-style: italic;
@@ -22,20 +22,21 @@
   margin-left: 1rem;
 }
 
-.container-comorbidities label {
+.container-radio label {
   font-size: 12px;
   font-weight: 500;
   line-height: 1.33;
   color: #2b6cb0;
   margin-left: 0.6rem;
+  margin-right: 0.4rem;
 }
 
-.comorbidities-inputs {
+.radio-inputs {
   display: flex;
   height: 100%;
 }
 
-.container-comorbidities-inputs {
+.container-radio-inputs {
   height: 100%;
   width: 10.5rem;
   display: flex;

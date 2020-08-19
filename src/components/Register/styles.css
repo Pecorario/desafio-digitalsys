@@ -19,7 +19,8 @@
   width: 100%;
 }
 
-.container-input input::placeholder {
+/* .container-input input::placeholder { */
+::placeholder {
   font-size: 12px;
   font-weight: 500;
   line-height: 1.33;

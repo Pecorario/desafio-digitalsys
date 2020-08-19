@@ -173,7 +173,228 @@ export default function NewOccurrence() {
           </fieldset>
         </form>
       
-        {/* <form className="avc-box"></form> */}
+        <form className="avc-box">
+          <fieldset>
+            <legend>Sinais e sintomas do AVC</legend>
+
+            <div className="container-radio">
+              <div className="radio-title">
+                <h2> Acordou com sintomas?</h2>
+              </div>
+
+              <div className="radio-inputs">
+
+                <div className="container-radio-inputs">
+                  <input type="radio" name="avc1" value="sim" />
+                  <label for="sim">Sim</label>
+                </div>
+
+                <div className="container-radio-inputs">
+                  <input type="radio" name="avc1" value="nao" />
+                  <label for="nao">Não</label>
+                </div>
+
+                <div className="container-radio-inputs">
+                  <input type="radio" name="avc1" value="nao-sei" />
+                  <label for="nao-sei">Não sei</label>
+                </div>
+            
+              </div>
+            </div>
+
+            <div className="container-radio">
+              <div className="radio-title">
+                <h2> Que horas iniciaram os sintomas?</h2>
+              </div>
+
+              <div className="radio-inputs">
+
+                <div className="container-radio-inputs">
+                </div>
+
+                <div className="container-radio-inputs input-time">
+                  <label for="avc2">Hora</label>
+                  <input type="text" name="avc2" placeholder="DIGITE A HORA"/>
+                </div>
+
+                <div className="container-radio-inputs">
+                  <input type="radio" name="avc2" value="nao-sei" />
+                  <label for="nao-sei">Não sei</label>
+                </div>
+              </div>
+            </div>
+
+            <div className="container-radio">
+              <div className="radio-title">
+                <h2> O paciente tem assimetria facial?</h2>
+                <p>Solicite: dê um sorriso.</p>
+              </div>
+
+              <div className="radio-inputs">
+
+                <div className="container-radio-inputs">
+                  <input type="radio" name="avc3" value="sim" />
+                  <label for="sim">Sim</label>
+                </div>
+
+                <div className="container-radio-inputs">
+                  <input type="radio" name="avc3" value="nao" />
+                  <label for="nao">Não</label>
+                </div>
+
+                <div className="container-radio-inputs">
+                </div>
+            
+              </div>
+            </div>
+          
+            <div className="container-radio">
+              <div className="radio-title">
+                <h2> O paciente tem fraqueza nos braços?</h2>
+                <p>Solicite: levante os braços na altura do ombro.</p>
+              </div>
+
+              <div className="radio-inputs">
+
+                <div className="container-radio-inputs">
+                  <input type="radio" name="avc4" value="sem-fraqueza" />
+                  <div className="label-with-p">
+                    <label for="sem-fraqueza">Sem fraqueza</label>
+                    <p className="label-p">Mantêm em cima mais de 10 segundos</p>
+                  </div>
+                </div>
+
+                <div className="container-radio-inputs">
+                  <input type="radio" name="avc4" value="leve" />
+                  <div className="label-with-p">
+                    <label for="leve">Leve</label>
+                    <p className="label-p">Cai em menos de 10 segundos</p>
+                  </div>
+                </div>
+
+                <div className="container-radio-inputs">
+                  <input type="radio" name="avc4" value="grave" />
+                  <div className="label-with-p">
+                    <label for="grave">Grave</label>
+                    <p className="label-p">Um ou ambos caem rapidamente</p>
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+
+            <div className="container-radio">
+              <div className="radio-title">
+                <h2> O paciente tem alteração da fala?</h2>
+                <p>Solicite verbalmente a frase: O Brasil é o país do futebol.</p>
+              </div>
+
+              <div className="radio-inputs">
+
+                <div className="container-radio-inputs">
+                  <input type="radio" name="avc5" value="sim" />
+                  <label for="sim">Sim</label>
+                </div>
+
+                <div className="container-radio-inputs">
+                  <input type="radio" name="avc5" value="nao" />
+                  <label for="nao">Não</label>
+                </div>
+
+                <div className="container-radio-inputs">
+                </div>
+            
+              </div>
+            </div>
+
+            <div className="container-radio">
+              <div className="radio-title">
+                <h2> O paciente tem alteração no conteúdo da fala?</h2>
+                <p>Mostre 3 objetos e pergunte o nome dos mesmos (Ex: celular, caneta e óculos) </p>
+              </div>
+
+              <div className="radio-inputs">
+
+                <div className="container-radio-inputs">
+                </div>
+
+                <div className="container-radio-inputs">
+                  <input type="radio" name="avc6" value="normal" />
+                  <div className="label-with-p">
+                    <label for="normal">Normal</label>
+                    <p className="label-p">2 ou 3 corretos</p>
+                  </div>
+                </div>
+
+                <div className="container-radio-inputs">
+                  <input type="radio" name="avc6" value="anormal" />
+                  <div className="label-with-p">
+                    <label for="anormal">Anormal</label>
+                    <p className="label-p">0 ou 1 correto</p>
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+
+            <div className="container-radio">
+              <div className="radio-title">
+                <h2> O paciente tem dificuldade na compreensão da fala?</h2>
+                <p>Solicite verbalmente o seguinte gesto: “Me mostre dois dedos” (não pode ser oferecido dica com mímica pelo examinador)</p>
+              </div>
+
+              <div className="radio-inputs">
+
+                <div className="container-radio-inputs">
+                </div>
+
+                <div className="container-radio-inputs">
+                  <input type="radio" name="avc7" value="normal" />
+                  <div className="label-with-p">
+                    <label for="normal">Normal</label>
+                    <p className="label-p">Paciente mostra 2 dedos</p>
+                  </div>
+                </div>
+
+                <div className="container-radio-inputs">
+                  <input type="radio" name="avc7" value="anormal" />
+                  <div className="label-with-p">
+                    <label for="anormal">Anormal</label>
+                    <p className="label-p">Paciente não entende ou não mostra 2 dedos</p>
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+
+            <div className="container-radio">
+              <div className="radio-title">
+                <h2> O paciente apresenta desvio do olhar?</h2>
+                <p>Checar se o paciente tem desvio conjugado do olhar para um dos lados.</p>
+              </div>
+
+              <div className="radio-inputs">
+
+                <div className="container-radio-inputs">
+                  <input type="radio" name="avc8" value="normal" />
+                  <label for="normal">Normal</label>
+                </div>
+
+                <div className="container-radio-inputs">
+                  <input type="radio" name="avc8" value="pref" />
+                  <label for="pref">Preferência do olhar</label>
+                </div>
+
+                <div className="container-radio-inputs">
+                  <input type="radio" name="avc8" value="desvio" />
+                  <label for="desvio">Desvio forçado e fixo</label>
+                </div>
+            
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
 
         <form className="trombolise-box">
           <fieldset>
