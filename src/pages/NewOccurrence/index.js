@@ -133,43 +133,81 @@ export default function NewOccurrence() {
 
             <RadioInput 
               title="É Hipertenso (a)?"
-              name="question1"
+              name="comorbidity1"
             />
 
             <RadioInput 
               title="É Diabético (a)?"
-              name="question2"
+              name="comorbidity2"
             />
 
             <RadioInput 
               title="Usa anticoagulante?"
-              name="question3"
+              name="comorbidity3"
             >
               <p>Varfarina (Marevan), Apixaban (Eliquis), Rivaroxaban (Xarelto), Dabigatran (Pradaxa), Edoxaban (Lixiana)</p>
             </RadioInput>
 
             <RadioInput 
               title="Tem arritmia (ex: fibrilação atrial)?"
-              name="question4"
+              name="comorbidity4"
             />
 
             <RadioInput 
               title="Histórico de AVC prévio?"
-              name="question5"
+              name="comorbidity5"
             />
 
             <RadioInput 
               title="Faz uso de drogas recreativas? Qual?"
-              name="question6"
+              name="comorbidity6"
             >
               <p>Cocaína, anfetaminas e maconha.</p>
             </RadioInput>
 
             <RadioInput 
               title="Histórico de epilepsia?"
-              name="question7"
+              name="comorbidity7"
             />
 
+          </fieldset>
+        </form>
+      
+        {/* <form className="avc-box"></form> */}
+
+        <form className="trombolise-box">
+          <fieldset>
+            <legend>Não recomendado para trombólise</legend>
+
+            <RadioInput 
+              title="AVC isquêmico ou TCE grave nos últimos 3 meses;"
+              name="trombolise1"
+            />
+
+            <RadioInput 
+              title="AVC hemorrágico, malformação arteriovenosa, neoplasia intracraniana prévia;"
+              name="trombolise2"
+            />
+
+            <RadioInput 
+              title="Suspeita de dussecção aórtica ou endocardite bacteriana atual;"
+              name="trombolise3"
+            />
+
+            <RadioInput 
+              title="Cirurgia de grande porte ou procedimento invasivo nas últimas 2 semanas;"
+              name="trombolise4"
+            />
+
+            <RadioInput 
+              title="Hemorragia do trato gastrointestinal ou geniturinário nas últimas 3 semanas;"
+              name="trombolise5"
+            />
+
+            <RadioInput 
+              title="Hipoglicemia < 50 mg/dl, com melhora completa dos sintomas após correção;"
+              name="trombolise6"
+            />
           </fieldset>
         </form>
       </main>
