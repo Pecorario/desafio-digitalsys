@@ -444,7 +444,6 @@ export default function NewOccurrence() {
           </fieldset>
         </form>
 
-
         <form className="trombolise-box">
           <fieldset>
             <legend>Não recomendado para trombólise</legend>

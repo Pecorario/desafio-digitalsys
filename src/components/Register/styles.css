@@ -2,6 +2,7 @@
   background: #eff4f6;
   padding: 0.5rem 0 0.5rem 1rem;
   width: 100%;
+  border-bottom: 1px solid #718096;
 }
 
 .container-input label {
