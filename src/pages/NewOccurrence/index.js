@@ -3,9 +3,12 @@ import logoImg from '../../assets/images/GPSUS.svg';
 import './styles.css';
 import NotificationsNone from '@material-ui/icons/NotificationsNone';
 import ExitToApp from '@material-ui/icons/ExitToApp';
+import AssignmentInd from '@material-ui/icons/AssignmentInd'
+
 import RegisterInput from '../../components/Register/RegisterInput';
 import RegisterSelect from '../../components/Register/RegisterSelect';
 import RadioInput from '../../components/RadioInput/RadioInput';
+import SignInput from '../../components/SignInput/SignInput';
 
 export default function NewOccurrence() {
   return (
@@ -48,9 +51,12 @@ export default function NewOccurrence() {
       <main>
         <p>PÁGINA INICIAL / NOVA OCORRÊNCIA</p>
 
-        <h2>Nova ocorrência</h2>
+        <div className="main-h2">
+          <AssignmentInd />
+          <h2>Nova ocorrência</h2>
+        </div>
 
-        <form className="patient-register">
+        <form className="register-box">
           <fieldset>
             <legend>Cadastro do paciente</legend>
 
@@ -127,7 +133,7 @@ export default function NewOccurrence() {
           </fieldset>
         </form>
         
-        <form className="comorbidity">
+        <form className="comorbidity-box">
           <fieldset>
             <legend>Comorbidades relevantes</legend>
 
@@ -212,7 +218,7 @@ export default function NewOccurrence() {
                 <div className="container-radio-inputs">
                 </div>
 
-                <div className="container-radio-inputs input-time">
+                <div className="container-radio-inputs input-model2">
                   <label for="avc2">Hora</label>
                   <input type="text" name="avc2" placeholder="DIGITE A HORA"/>
                 </div>
@@ -395,6 +401,49 @@ export default function NewOccurrence() {
 
           </fieldset>
         </form>
+
+        <form className="vital-signs-box">
+          <fieldset>
+            <legend>Sinais vitais</legend>
+
+            <SignInput
+              title="PA"
+              placeholderText="DIGITE x DIGITE"
+              inputFor="sign1"
+              nameLabel="mmHG"
+            >
+              <p>Não reduzir PA, se abaixo de 220x120mmHg</p>
+            </SignInput>
+
+            <SignInput
+              title="Glicemia capilar"
+              placeholderText="DIGITE"
+              inputFor="sign2"
+              nameLabel="mg/dL"
+            >
+              <p>Corrigir se abaixo de 60mg/dL</p>
+            </SignInput>
+
+            <SignInput
+              title="FC"
+              placeholderText="DIGITE"
+              inputFor="sign3"
+              nameLabel="bpm"
+            />
+
+            <SignInput
+              title="Sat. O2"
+              placeholderText="DIGITE"
+              inputFor="sign4"
+              nameLabel="%"
+            >
+              <p>Oxigênio, se, Sat.O2 menor que 92%</p>
+            </SignInput>
+        
+
+          </fieldset>
+        </form>
+
 
         <form className="trombolise-box">
           <fieldset>
