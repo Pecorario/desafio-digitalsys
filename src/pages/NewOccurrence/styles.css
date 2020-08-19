@@ -87,3 +87,51 @@
 .save-btn {
   background: #2c5282;
 }
+
+/* Formulários */
+
+#page-new-occurrence main {
+  margin: 1rem;
+}
+
+#page-new-occurrence main p {
+  font-size: 12px;
+  line-height: 1.33;
+  color: #a0aec0;
+  font-weight: 500;
+}
+
+#page-new-occurrence main h2 {
+  margin-top: 2rem;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.36;
+  color: #2b6cb0
+}
+
+#page-new-occurrence main form {
+  margin-top: 1rem;
+  width: 100%;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.06);
+}
+
+#page-new-occurrence legend {
+  background-color: #e2e8f0;
+  display: flex;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  color: #718096;
+  height: 2rem;
+  padding-left: 1rem;
+  align-items: center;
+}
+
+#page-new-occurrence label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  
+}
+
